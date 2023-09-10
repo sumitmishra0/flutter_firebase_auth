@@ -30,14 +30,17 @@ class AppHome extends StatelessWidget {
         leading: const Icon(Icons.ondemand_video),
       ),
       body: Padding(padding: const EdgeInsets.all(20),
-      child: ListView(
-        children: [ 
-          Text('Heading', style: Theme.of(context).textTheme.displayMedium,), 
-          Text('Sub-heading', style: Theme.of(context).textTheme.headlineSmall,),
-          Text("Paragraph", style: Theme.of(context).textTheme.bodyMedium,),
-          ElevatedButton(onPressed: (){}, child: const Text('Elevated Button')),
-          OutlinedButton(onPressed: (){}, child: const Text('Outlined Button'))
-        ],
+      // child: ListView(
+      //   children: [ 
+      //     Text('Heading', style: Theme.of(context).textTheme.displayMedium,), 
+      //     Text('Sub-heading', style: Theme.of(context).textTheme.headlineSmall,),
+      //     Text("Paragraph", style: Theme.of(context).textTheme.bodyMedium,),
+      //     ElevatedButton(onPressed: (){}, child: const Text('Elevated Button')),
+      //     OutlinedButton(onPressed: (){}, child: const Text('Outlined Button'))
+      //   ],
+      // ),
+      child: Center(
+        child: Text('Home page'),
       ),
       ),
       floatingActionButton: FloatingActionButton(child: const Icon(Icons.add_shopping_cart), onPressed: (){}),
