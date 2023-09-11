@@ -1,3 +1,4 @@
+import 'package:firbase_auth/src/features/authentication/screens/splash/splash_screen.dart';
 import 'package:firbase_auth/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home:  const AppHome(),
+      home:  const SplashScreen(),
     );
   }
 }
